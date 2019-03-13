@@ -1,0 +1,43 @@
+{
+  "main": "src/block.js",
+  "source": {
+    "src/**/*.css": "dist/styles"
+  },
+  "scripts": {
+    "start": "parcel src/block.js",
+    "watch": "parcel watch src/block.js",
+    "build": "parcel build src/block.js --no-content-hash"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@wordpress/babel-plugin-makepot": "^3.0.0",
+    "@wordpress/babel-preset-default": "^4.0.0",
+    "@wordpress/blocks": "^6.1.0",
+    "@wordpress/editor": "^9.1.0",
+    "@wordpress/element": "^2.2.0",
+    "astroturf": "^0.9.1",
+    "parcel-bundler": "^1.12.1",
+    "postcss-modules": "^1.4.1",
+    "precss": "^4.0.0"
+  },
+  "postcss": {
+    "modules": true,
+    "plugins": [
+      "precss"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@wordpress/default"
+    ],
+    "plugins": [
+      [
+        "astroturf/plugin"
+      ]
+    ]
+  },
+  "dependencies": {
+    "build": "^0.1.4",
+    "yarn": "^1.13.0"
+  }
+}
