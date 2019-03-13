@@ -1,5 +1,4 @@
 const { InnerBlocks } = wp.editor
-const { Headline, Paragraph } = wp.blocks
 import { columns } from './styled'
 
 const TEMPLATE = [

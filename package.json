@@ -35,9 +35,5 @@
         "astroturf/plugin"
       ]
     ]
-  },
-  "dependencies": {
-    "build": "^0.1.4",
-    "yarn": "^1.13.0"
   }
 }
